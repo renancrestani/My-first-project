@@ -19,7 +19,7 @@
             padding: 10px; 
             text-align: center; 
         }
-
+   
 p {
 	text-align: center;
 	font-size: 25px;
@@ -36,13 +36,10 @@ h2{
 	text-align: center;
 	font-size: 49px;
 	font-style: italic;
-	font-family: sans-serif;
+	font-family: cursive;
 	color: yellow;
 }
-img{
-	max-width: 100%;
-    height: auto;
-    }
+
 
 .box {
             border-radius: 15px;
@@ -66,8 +63,25 @@ img{
 button{
 	align-content: center;
 	align-items: center;
-	text-align: center;
-}
+	text-align: center; ]
+    background-color: black;
+    background-color: black;
+        border: solid;
+        border-radius: 50%;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        animation: floatingGlow 2s infinite alternate;
+    }
+
+    @keyframes floatingGlow {
+        0% {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        100% {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+   }
 
 .botao1{
 	text-align: center;
@@ -100,6 +114,14 @@ button{
 	align-items: center;
           }
 
+.imgrodape{
+        position: right;
+      
+
+.cabecalho{
+    color: white;
+}
+
 </style>
 
 <body>
@@ -129,9 +151,8 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
 
 <center>
 <div class="Botao1">
-
 <button id="Botao1">Prevenção</button>
-    <div class="box"><p id="textoEscondido1" style="display: none;">"Um mês para lembrar que a prevenção é a melhor cura.”</p>
+    <p id="textoEscondido1" style="display: none;">"Um mês para lembrar que a prevenção é a melhor cura.”</p>
     <script>
         document.getElementById("Botao1").addEventListener("click", function() {
             document.getElementById("textoEscondido1").style.display = "block";
@@ -166,18 +187,6 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
 
 <center>
 <div class="Botao4">
-    <button id="Botao4">Lembrete</button>
-    <p id="textoEscondido4" style="display: none;">"Um lembrete de que juntos podemos vencer as hepatites virais.”</p>
-    <script>
-        document.getElementById("Botao4").addEventListener("click", function() {
-            document.getElementById("textoEscondido4").style.display = "block";
-        });
-    </script>
-</div>
-</center>
-
-<center>
-<div class="Botao5">
     <button id="Botao5">Saúde</button>
     <p id="textoEscondido5" style="display: none;">"lembre-se: o cuidado com a saúde começa com a prevenção.”</p>
     <script>
@@ -188,11 +197,30 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
 </div>
 </center>
 
+<center>
+<div class="Botao5">
+    <button id="Botao4">Lembrete</button>
+    <p id="textoEscondido4" style="display: none;">"Um lembrete de que juntos podemos vencer as hepatites virais.”</p>
+    <script>
+        document.getElementById("Botao4").addEventListener("click", function() {
+            document.getElementById("textoEscondido4").style.display = "block";
+        });
+    </script>
+</div>
+</center>
+
+<div class="imgrodape">
+<img src="https://th.bing.com/th/id/R.f89a12e1b004c81627ac042bf0b10e7b?rik=R0%2fwLWvH6Lp3rw&riu=http%3a%2f%2fwww1.sp.senac.br%2fhotsites%2fsites%2fguiavisual%2fwp-content%2fuploads%2f2021%2f05%2fLogo-negativo-1.jpg&ehk=%2b9WHycLiSASwNfdJa6GBObuNW1Guk%2f7quhnjZ1qWIw4%3d&risl=&pid=ImgRaw&r=0" style="float:right" width="60" height="50">
+
+<div class="cabecalho">
 <header>
     <h2>Entre em contato:</h2>
-        <p>Telefone: <a href="tel:+5571999999999">(71) 99999-9999</a></p>
-        <p>Email: <a href="mailto:contato@seusite.com">contato@seusite.com</a></p>
+    <h2>Hospital da Providência</h2>
+        <p>Endereço: R. Rio Branco, 518 - Centro, Apucarana - PR, 86800-120</p>
+        <p>Telefone: <a href="tel:+55(43) 3420-1400">(43) 3420-1400</a></p>
+        <p>Horário de funcionamento: Aberto 24 horas</p>
 </header>
+</div>
 
 </body>
 </html>
