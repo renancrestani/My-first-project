@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="Pt-br">
 
@@ -129,6 +130,7 @@ button{
     <p><img src="https://imagepng.org/wp-content/uploads/2018/09/laco-fita-amarela-1.png" alt="Logo" height="20" width="20"> <h2>Julho amarelo</h2> <p><img src="https://imagepng.org/wp-content/uploads/2018/09/laco-fita-amarela-1.png" alt="Logo" height="20" width="20"></p>
 </header>	
 
+
 <div style="text-align: center;">
 <iframe width="760" height="515" src="
 https://www.youtube.com/embed/4DAExTvdHA8?si=7cdvWPSXMNkUWSkx"
@@ -147,6 +149,9 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
 <p>Portanto, o “Julho Amarelo” é uma campanha de grande relevância, que não apenas informa e educa a população sobre as hepatites virais, mas também promove a saúde e o bem-estar de todos.</p>
 </div>
 
+<p><image src="https://casembrapa.com.br/storage/app/public/inserted_files/2021/07/julho-amarelo.png" alt="sintomas"align="middle" > </p>
+<section id="ingredientes">
+
 <h1>Clique Nos Botões abaixo Para uma Surpresa</h1>
 
 <center>
@@ -154,8 +159,15 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
 <button id="Botao1">Prevenção</button>
     <p id="textoEscondido1" style="display: none;">"Um mês para lembrar que a prevenção é a melhor cura.”</p>
     <script>
-        document.getElementById("Botao1").addEventListener("click", function() {
-            document.getElementById("textoEscondido1").style.display = "block";
+        const botao = document.getElementById("Botao1");
+        const texto = document.getElementById("textoEscondido1");
+
+        botao.addEventListener("click", function() {
+            if (texto.style.display === "none") {
+                texto.style.display = "block";
+            } else {
+                texto.style.display = "none";
+            }
         });
     </script>
 </center>
@@ -167,7 +179,9 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
     <p id="textoEscondido2" style="display: none;">"Iluminamos a esperança e a conscientização sobre as hepatites virais.”</p>
     <script>
         document.getElementById("Botao2").addEventListener("click", function() {
-            document.getElementById("textoEscondido2").style.display = "block";
+            
+            const texto = document.getElementById("textoEscondido2");
+            texto.style.display = texto.style.display === "none" ? "block" : "none";
         });
     </script>
 </div>
@@ -179,7 +193,9 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
     <p id="textoEscondido3" style="display: none;">“A informação é a nossa maior arma contra as hepatites. Vamos espalhar a palavra neste Julho Amarelo.”</p>
     <script>
         document.getElementById("Botao3").addEventListener("click", function() {
-            document.getElementById("textoEscondido3").style.display = "block";
+          
+          const texto = document.getElementById("textoEscondido3");
+            texto.style.display = texto.style.display === "none" ? "block" : "none";
         });
     </script>
 </div>
@@ -187,11 +203,13 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
 
 <center>
 <div class="Botao4">
-    <button id="Botao5">Saúde</button>
-    <p id="textoEscondido5" style="display: none;">"lembre-se: o cuidado com a saúde começa com a prevenção.”</p>
+    <button id="Botao4">Saúde</button>
+    <p id="textoEscondido4" style="display: none;">"lembre-se: o cuidado com a saúde começa com a prevenção.”</p>
     <script>
-        document.getElementById("Botao5").addEventListener("click", function() {
-            document.getElementById("textoEscondido5").style.display = "block";
+        document.getElementById("Botao4").addEventListener("click", function() {
+           
+           const texto = document.getElementById("textoEscondido4");
+            texto.style.display = texto.style.display === "none" ? "block" : "none";
         });
     </script>
 </div>
@@ -199,11 +217,13 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
 
 <center>
 <div class="Botao5">
-    <button id="Botao4">Lembrete</button>
-    <p id="textoEscondido4" style="display: none;">"Um lembrete de que juntos podemos vencer as hepatites virais.”</p>
+    <button id="Botao5">Lembrete</button>
+    <p id="textoEscondido5" style="display: none;">"Um lembrete de que juntos podemos vencer as hepatites virais.”</p>
     <script>
-        document.getElementById("Botao4").addEventListener("click", function() {
-            document.getElementById("textoEscondido4").style.display = "block";
+        document.getElementById("Botao5").addEventListener("click", function() {
+           
+           const texto = document.getElementById("textoEscondido5");
+            texto.style.display = texto.style.display === "none" ? "block" : "none";
         });
     </script>
 </div>
